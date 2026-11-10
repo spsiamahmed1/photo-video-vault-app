@@ -7,14 +7,14 @@ import android.graphics.Typeface;
 import android.graphics.drawable.GradientDrawable;
 import android.view.*;
 import android.widget.*;
-import androidx.core.content.ContextCompat;
+import androidx.core.content.res.ResourcesCompat;
 import com.siam.vault.R;
 
 public final class Ui {
     public static final int ORANGE=Color.rgb(255,122,0), DARK=Color.rgb(26,26,26), GREY=Color.rgb(138,138,138), BG=Color.rgb(248,249,250);
     private Ui(){}
     public static void secure(Activity a){a.getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);}
-    public static Typeface font(Context c){return ContextCompat.getFont(c,R.font.hind_siliguri);}
+    public static Typeface font(Context c){return ResourcesCompat.getFont(c,R.font.hind_siliguri);}
     public static TextView text(Context c,String s,int sp,boolean bold){TextView t=new TextView(c);t.setText(s);t.setTextColor(DARK);t.setTextSize(sp);t.setTypeface(font(c),bold?Typeface.BOLD:Typeface.NORMAL);return t;}
     public static GradientDrawable shape(int color,int radius,int stroke){GradientDrawable d=new GradientDrawable();d.setColor(color);d.setCornerRadius(radius);if(stroke!=0)d.setStroke(1,stroke);return d;}
     public static LinearLayout column(Context c){LinearLayout l=new LinearLayout(c);l.setOrientation(LinearLayout.VERTICAL);l.setPadding(dp(c,20),dp(c,14),dp(c,20),dp(c,20));l.setBackgroundColor(BG);return l;}
