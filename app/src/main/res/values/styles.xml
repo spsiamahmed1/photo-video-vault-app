@@ -1,0 +1,21 @@
+<resources>
+    <color name="vault_orange">#FF7A00</color>
+    <color name="vault_orange_dark">#FF6B00</color>
+    <color name="vault_orange_light">#FFF3E6</color>
+    <color name="vault_white">#FFFFFF</color>
+    <color name="vault_bg">#F8F9FA</color>
+    <color name="vault_text">#1A1A1A</color>
+    <color name="vault_grey">#8A8A8A</color>
+    <color name="vault_border">#F1F1F1</color>
+    <style name="Theme.Vault" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/vault_orange</item>
+        <item name="colorPrimaryVariant">@color/vault_orange_dark</item>
+        <item name="colorSecondary">@color/vault_orange</item>
+        <item name="android:fontFamily">@font/hind_siliguri</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/vault_bg</item>
+        <item name="android:navigationBarColor">@color/vault_bg</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowBackground">@color/vault_bg</item>
+    </style>
+</resources>
